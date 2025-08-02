@@ -1,0 +1,103 @@
+/* Navbar Container */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.name-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.text-gradient {
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Links */
+.nav-links a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ffe6f2;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.signin-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.signin-link:hover {
+  color: black;
+}
+
+/* Join Button */
+.join-btn {
+  background: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.join-btn:hover {
+  color: black;
+  background: linear-gradient(to right, #90e0ef);
+  border: 2px solid white;
+  transform: scale(1.05);
+}
