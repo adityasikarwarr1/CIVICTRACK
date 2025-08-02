@@ -6,7 +6,7 @@
 
 .hero-section {
   font-family: "Segoe UI", sans-serif;
-  /* background: linear-gradient(135deg, #0077b6, #a190ba); */
+ 
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -16,8 +16,7 @@
   padding: 2rem;
   text-align: center;
 }
-
-h1 {
+.statement {
   font-size: 5rem;
   font-weight: 800;
   line-height: 1.2;
@@ -28,7 +27,7 @@ h1 span {
   display: block;
 }
 
-p.description {
+.tagline {
   font-size: 1.2rem;
   font-weight: 400;
   max-width: 800px;
@@ -36,7 +35,7 @@ p.description {
   line-height: 1.6;
 }
 
-.buttons {
+.buttons1 {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -44,7 +43,7 @@ p.description {
   margin-bottom: 3rem;
 }
 
-button {
+.buttons1 button {
   margin-top: 10px;
   padding: 25px 24px;
   font-size: 1rem;

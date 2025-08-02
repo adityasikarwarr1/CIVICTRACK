@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="issues.css" />
   </head>
 
   <style>
@@ -28,7 +29,7 @@
       <nav class="nav-links">
         <a href="#">Home</a>
         <a href="#admin-section">Admins</a>
-        <a href="#">Issues</a>
+        <a href="#issues">Issues</a>
         <a href="#">About</a>
       </nav>
 
@@ -40,14 +41,16 @@
     <main>
       <section class="hero-section">
         <div class="badge">🚀 Connecting Citizens with Leaders</div>
-        <h1>Bridge the Gap Between<br /><span>Citizens & Officials</span></h1>
-        <p>
+        <h1 class="statement">
+          Bridge the Gap Between<br /><span>Citizens & Officials</span>
+        </h1>
+        <p class="tagline">
           Report issues directly to your local politicians, municipal officers,
           and public officials.<br />Track progress, vote on priorities, and see
           real change happen in your community.
         </p>
 
-        <div class="buttons">
+        <div class="buttons1">
           <button class="btn-primary">📝 Report an Issue</button>
           <button class="btn-secondary">👤 Browse Officials</button>
         </div>
@@ -159,10 +162,101 @@
         </div>
       </section>
     </div>
+
+    <div id="issues">
+      <div class="container2">
+        <h1>Your NearBy Community Issues</h1>
+        <p class="sub-heading">
+          Track the latest issues reported by citizens and see how officials are
+          responding to community needs.
+        </p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <span class="badge processing">Processing</span>
+            <p class="issue-id">#ISS-001</p>
+            <h2>Broken Street Light on MG Road</h2>
+            <p class="desc">
+              The street light near MG Road market has been non-functional for
+              over a week, causing safety concerns for pedestrians during
+              evening hours.
+            </p>
+            <div class="author">
+              <div class="avatar">DRK</div>
+              <div>
+                <strong>Dr. Rajesh Kumar</strong><br />
+                <span>New Delhi</span>
+              </div>
+            </div>
+            <button class="btn-secondary">Images</button>
+            <div class="footer">
+              <span>👍 47</span>
+              <span>💬 12</span>
+              <span>🕒 2 days ago</span>
+            </div>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <div class="card">
+            <span class="badge resolved">Resolved</span>
+            <p class="issue-id">#ISS-002</p>
+            <h2>Water Logging in Residential Area</h2>
+            <p class="desc">
+              Severe water logging issue in Sector 12 after recent rains. The
+              drainage system appears to be clogged.
+            </p>
+            <div class="author">
+              <div class="avatar">PS</div>
+              <div>
+                <strong>Priya Sharma</strong><br />
+                <span>Mumbai</span>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn-secondary">Images</button>
+              <button class="btn-secondary">Videos</button>
+              <button class="btn-secondary">3 Proof</button>
+            </div>
+            <div class="footer">
+              <span>👍 89</span>
+              <span>💬 23</span>
+              <span>🕒 1 week ago</span>
+            </div>
+            <button class="btn-primary">View Details</button>
+          </div>
+
+          <div class="card">
+            <span class="badge pending">Pending</span>
+            <p class="issue-id">#ISS-003</p>
+            <h2>Irregular Bus Service Route 45</h2>
+            <p class="desc">
+              Bus route 45 has been running irregularly for the past month,
+              causing inconvenience to daily commuters.
+            </p>
+            <div class="author">
+              <div class="avatar">IN</div>
+              <div>
+                <strong>Unknown</strong><br />
+                <span>City</span>
+              </div>
+            </div>
+            <button class="btn-secondary">Images</button>
+            <button class="btn-secondary">Videos</button>
+            <button class="btn-secondary">3 Proof</button>
+            <div class="footer">
+              <span>👍111</span>
+              <span>💬23</span>
+              <span>🕒2 days ago</span>
+            </div>
+            <button class="btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-  <!-- <script>
+  <script>
     if (performance.navigation.type === 1) {
       window.location.href = "home.html";
     }
-  </script> -->
+  </script>
 </html>
