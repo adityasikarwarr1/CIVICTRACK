@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Your Issue</title>
+    <link rel="stylesheet" href="postissue.css" />
+  </head>
+  <body>
+    <div class="issue-form-container">
+      <form class="issue-form" action="main2.html">
+        <h2>📢 Post Your Issue</h2>
+
+        <input type="text" placeholder="Your Full Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Location / Address" required />
+
+        <select required>
+          <option value="">Select Issue Type</option>
+          <option>Pothole</option>
+          <option>Garbage Problem</option>
+          <option>Street Light Not Working</option>
+          <option>Water Leakage</option>
+          <option>Other</option>
+        </select>
+
+        <textarea
+          placeholder="Describe the issue in detail..."
+          required
+        ></textarea>
+
+        <label for="image">Upload Photo (optional):</label>
+        <input type="file" accept="image/*" id="image" />
+
+        <a href="main2.html"> <button type="submit">Submit Issue</button> </a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -43,6 +43,7 @@ h1 span {
 }
 
 .buttons1 button {
+  text-decoration: none;
   margin-top: 10px;
   padding: 25px 24px;
   font-size: 1rem;
@@ -57,6 +58,7 @@ h1 span {
 }
 
 button.primary {
+  text-decoration: none;
   background-color: #fff;
   color: #0077b6;
 }
@@ -133,6 +135,10 @@ button.secondary {
     display: flex;
     animation: fadeIn 0.5s ease-in-out;
   }
+}
+
+#none {
+  text-decoration: none;
 }
 
 @keyframes fadeIn {
