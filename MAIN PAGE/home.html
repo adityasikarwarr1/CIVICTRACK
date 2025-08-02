@@ -6,7 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="admin.css" />
   </head>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0077b6, #a190ba);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   <body>
     <header class="navbar">
       <div class="name">
@@ -17,13 +27,13 @@
 
       <nav class="nav-links">
         <a href="#">Home</a>
-        <a href="#">Admins</a>
+        <a href="#admin-section">Admins</a>
         <a href="#">Issues</a>
         <a href="#">About</a>
       </nav>
 
       <div class="auth-buttons">
-        <a href="#" class="signin-link">Sign In</a>
+        <a href="#" class="signin-link">Register as User</a>
         <a href="#" class="join-btn">Join as Admin</a>
       </div>
     </header>
@@ -61,5 +71,98 @@
         </div>
       </section>
     </main>
+
+    <div id="admin-section">
+      <section class="officials-section">
+        <h2>Meet Your Local Officials</h2>
+        <p class="subtext">
+          Connect directly with politicians, municipal officers, and public
+          officials who are working to solve community issues.
+        </p>
+
+        <div class="card-container">
+          <div class="official-card">
+            <div class="profile-icon">DRK</div>
+            <h3>Dr. Rajesh Kumar</h3>
+            <p class="designation">District Magistrate</p>
+            <p class="location">📍 New Delhi</p>
+            <p class="rating">⭐ 4.8 rating</p>
+            <div class="stats">
+              <span>✅ 142</span>
+              <span>🕒 14</span>
+              <span>📊 156</span>
+            </div>
+            <div class="tags">
+              <span>Infrastructure</span>
+              <span>Education</span>
+              <span>Healthcare</span>
+            </div>
+            <button class="profile-btn">View Profile & Report Issue</button>
+          </div>
+
+          <div class="official-card">
+            <div class="profile-icon">PS</div>
+            <h3>Priya Sharma</h3>
+            <p class="designation">Municipal Commissioner</p>
+            <p class="location">📍 Mumbai</p>
+            <p class="rating">⭐ 4.6 rating</p>
+            <div class="stats">
+              <span>✅ 78</span>
+              <span>🕒 11</span>
+              <span>📊 89</span>
+            </div>
+            <div class="tags">
+              <span>Water Supply</span>
+              <span>Roads</span>
+              <span>Sanitation</span>
+            </div>
+            <button class="profile-btn">View Profile & Report Issue</button>
+          </div>
+
+          <div class="official-card">
+            <div class="profile-icon">VS</div>
+            <h3>Vikram Singh</h3>
+            <p class="designation">MLA - North Constituency</p>
+            <p class="location">📍 Jaipur</p>
+            <p class="rating">⭐ 4.7 rating</p>
+            <div class="stats">
+              <span>✅ 187</span>
+              <span>🕒 16</span>
+              <span>📊 203</span>
+            </div>
+            <div class="tags">
+              <span>Public Transport</span>
+              <span>Safety</span>
+              <span>Development</span>
+            </div>
+            <button class="profile-btn">View Profile & Report Issue</button>
+          </div>
+
+          <div class="official-card">
+            <div class="profile-icon">DAD</div>
+            <h3>Dr. Anita Desai</h3>
+            <p class="designation">Mayor</p>
+            <p class="location">📍 Pune</p>
+            <p class="rating">⭐ 4.9 rating</p>
+            <div class="stats">
+              <span>✅ 94</span>
+              <span>🕒 4</span>
+              <span>📊 98</span>
+            </div>
+            <div class="tags">
+              <span>Environment</span>
+              <span>Smart City</span>
+              <span>Parks</span>
+            </div>
+            <button class="profile-btn">View Profile & Report Issue</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
+  <!-- <script>
+    if (performance.navigation.type === 1) {
+      window.location.href = "home.html";
+    }
+  </script> -->
 </html>
