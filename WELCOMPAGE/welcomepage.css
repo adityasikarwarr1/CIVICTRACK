@@ -1,12 +1,10 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(to bottom, #0a2a43, #0f1d2d);
+  background: linear-gradient(135deg, #0077b6, #00b4d8, #caf0f8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,45 +14,74 @@ body {
 .container {
   text-align: center;
   color: white;
+  padding: 50px;
+  margin: 30px;
 }
 
 .typing-text {
-  font-size: 3.5rem;
+  font-size: 5rem;
+  font-family: "Playfair Display", serif;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #fff;
   width: 0;
-  animation: typing 2.5s steps(10) forwards, blink 0.7s step-end infinite;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  animation: smoothTyping 1.5s ease-out forwards;
 }
 
-@keyframes typing {
+@keyframes smoothTyping {
   from {
     width: 0;
   }
   to {
-    width: 10ch;
-  }
-}
-
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
+    width: 100%;
   }
 }
 
 .quote {
-  margin-top: 20px;
-  font-size: 1.1rem;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-style: italic;
   opacity: 0;
-  animation: fadeIn 2s ease-in-out 3s forwards;
+  animation: fadeIn 1s ease-in-out 1.6s forwards;
 }
 
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+.start-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0077b6;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeSlideIn 1s ease-in-out 3.2s forwards;
+  transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #0077b6;
+  transform: scale(1.05);
+  color: white;
+}
+
+.start-btn:active {
+  background-color: #023e8a;
+  transform: scale(0.98);
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
