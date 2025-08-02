@@ -1,4 +1,4 @@
-/* Navbar Container */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -15,7 +15,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo Section */
+
 .name {
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Navigation Links */
+
 .nav-links a {
   margin: 0 18px;
   text-decoration: none;
@@ -65,7 +65,7 @@
   color: #ffe6f2;
 }
 
-/* Auth Buttons */
+
 .auth-buttons {
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@
   color: black;
 }
 
-/* Join Button */
+
 .join-btn {
   background: white;
   color: black;

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0077b6, #a190ba);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  display: block;
+}
+
+p.description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+button {
+  margin-top: 10px;
+  padding: 25px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button.primary {
+  background-color: #fff;
+  color: #0077b6;
+}
+
+button.secondary {
+  background-color: #fff;
+  color: #0077b6;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.records-section {
+  margin-top: 10px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.record-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 200px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.record-card:hover {
+  transform: translateY(-5px);
+}
+
+.record-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.record-card h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.record-card p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
